@@ -1,0 +1,1 @@
+测试loadbalance用的，逻辑与compute-service相同
