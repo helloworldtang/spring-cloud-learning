@@ -15,6 +15,16 @@ public class ComputeService {
     @Autowired
     private RestTemplate restTemplate;
 
+    public String serviceUrl() {
+        String serviceName = "COMPUTE-SERVICE";
+        List<ServiceInstance> list = discoveryClient.getInstances(serviceName);
+        if (list != null && list.size() > 0) {
+            return String.valueOf(list.get(0).getUri());
+        }
+        throw new IllegalArgumentException("service no found:" + serviceName);
+    }
+
+
     @HystrixCommand(fallbackMethod = "addServiceFallback")
     public String addService(Integer a, Integer b) {
         //消费COMPUTE-SERVICE的add服务
