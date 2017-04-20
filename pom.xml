@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.learning</groupId>
-    <artifactId>springcloud-learning</artifactId>
+    <artifactId>spring-cloud-learning</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <modules>
         <module>compute-service-1</module>
