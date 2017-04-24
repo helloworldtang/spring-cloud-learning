@@ -11,7 +11,7 @@
         <module>compute-service-2</module>
         <module>eureka-server</module>
         <module>eureka-ribbon</module>
-        <module>Reverse-Proxy</module>
+        <module>reverse-proxy</module>
         <module>eureka-feign</module>
     </modules>
     <packaging>pom</packaging>

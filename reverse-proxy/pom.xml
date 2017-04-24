@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>ReverseProxyServer</artifactId>
+    <artifactId>reverse-proxy</artifactId>
     <dependencies>
         <dependency>
             <groupId>org.mitre.dsmiley.httpproxy</groupId>
