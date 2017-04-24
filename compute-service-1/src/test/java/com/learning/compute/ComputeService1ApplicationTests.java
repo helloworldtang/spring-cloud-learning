@@ -1,4 +1,4 @@
-package com.learning;
+package com.learning.compute;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class SpringcloudLearningApplicationTests {
+public class ComputeService1ApplicationTests {
 
 	@Test
 	public void contextLoads() {

@@ -13,9 +13,9 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  */
 @EnableDiscoveryClient
 @SpringBootApplication
-public class ComputeServiceApplication {
+public class ComputeService1Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(ComputeServiceApplication.class, args);
+        SpringApplication.run(ComputeService1Application.class, args);
     }
 }
