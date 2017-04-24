@@ -1,6 +1,6 @@
 server:
   port: 3333
-#指定微服务的名称后续在调用的时候只需要使用该名称就可以进行服务的访问
+#鎸囧畾寰湇鍔＄殑鍚嶇О鍚庣画鍦ㄨ皟鐢ㄧ殑鏃跺�欏彧闇�瑕佷娇鐢ㄨ鍚嶇О灏卞彲浠ヨ繘琛屾湇鍔＄殑璁块棶
 spring:
   application:
     name: feign-consumer
@@ -8,4 +8,4 @@ eureka:
   client:
     eureka-service-url-poll-interval-seconds: 1
     service-url:
-        defaultZone: http://svr1:1111/eureka/,http://svr2:1112/eureka/
+        defaultZone: http://localhost:1110/eureka/,http://svr1:1111/eureka/,http://svr2:1112/eureka/
