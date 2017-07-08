@@ -1,6 +1,8 @@
 
 
 Eureka server  注册中心，对外提供服务注册以及发现功能    
+如果服务2依赖于服务1，则需要先启动服务1   
+
 下面两个是loadbalance用的。只用启动一个即可。实现了lb和circuit breaker功能   
 ribbon   
 feign  
