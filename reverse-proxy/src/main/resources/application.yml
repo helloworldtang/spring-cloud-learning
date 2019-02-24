@@ -1,4 +1,0 @@
-proxy:
-    solr:
-        servlet_url: /solr/*
-        target_url: http://solrserver:8983/solr

@@ -20,7 +20,7 @@ import java.util.Objects;
 /**
  * Created by tangcheng on 7/9/2017.
  */
-@Component
+//@Component
 public class LoginFilter extends ZuulFilter {
 
     public static final Logger LOGGER = LoggerFactory.getLogger(LoginFilter.class);
@@ -67,7 +67,7 @@ public class LoginFilter extends ZuulFilter {
 
         if (!request.getRequestURI().contains("/login")) {
             String authorization = request.getHeader(HttpHeaders.AUTHORIZATION);
-            if (StringUtils.isBlank(authorization)) {
+            if (StringUtils.isNotBlank(authorization)) {
                 Cookie[] cookies = request.getCookies();
                 if (cookies != null) {
                     for (Cookie cookie : cookies) {
