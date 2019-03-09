@@ -13,12 +13,11 @@
         <module>eureka-ribbon</module>
         <module>eureka-feign</module>
         <module>service-zuul</module>
-        <module>service-client</module>
     </modules>
     <packaging>pom</packaging>
 
     <name>springcloud-learning</name>
-    <description>Demo project for Spring Boot</description>
+    <description>Spring Cloud相关</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -55,6 +54,13 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>27.0.1-jre</version>
+        </dependency>
+
         <dependency>
             <groupId>joda-time</groupId>
             <artifactId>joda-time</artifactId>
@@ -70,12 +76,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-devtools</artifactId>
-            <scope>runtime</scope>
         </dependency>
 
     </dependencies>

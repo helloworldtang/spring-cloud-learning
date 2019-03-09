@@ -29,7 +29,7 @@ public class ComputeService {
     @PostConstruct
     public void testApi() {
         try {
-            LOGGER.info("{}", serviceUrl());
+            LOGGER.info("serviceUrl:{}", serviceUrl());
         } catch (Exception e) {
             LOGGER.warn(e.getMessage(), e);
         }

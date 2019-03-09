@@ -1,5 +1,6 @@
 package com.learning.compute;
 
+import com.spring4all.swagger.EnableSwagger2Doc;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
@@ -11,6 +12,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  * 由于Spring Cloud选型是中立的因此抽象出该接口，
  * 当服务注册中心选型改变为Eureka，ZK，Consul时，不需要修改原有代码中的注解。
  */
+@EnableSwagger2Doc
 @EnableDiscoveryClient
 @SpringBootApplication
 public class ComputeService1Application {
