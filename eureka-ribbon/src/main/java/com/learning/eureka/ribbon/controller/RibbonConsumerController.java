@@ -28,8 +28,8 @@ public class RibbonConsumerController {
     @ApiOperation("加法运算")
     @RequestMapping(value = "add", method = RequestMethod.GET)
     public String add(HttpServletRequest request,
-                      @RequestParam(value = "a") Integer a,
-                      @RequestParam(value = "b") Integer b) {
+                      @RequestParam(value = "a", defaultValue = "1") Integer a,
+                      @RequestParam(value = "b", defaultValue = "1") Integer b) {
         LOGGER.info("from:{}", request.getRequestURL());
         return computeService.addService(a, b);
     }

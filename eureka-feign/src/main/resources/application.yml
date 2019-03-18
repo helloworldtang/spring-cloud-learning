@@ -13,4 +13,6 @@ eureka:
     eureka-service-url-poll-interval-seconds: 1
     service-url:
       defaultZone: http://localhost:1110/eureka/,http://svr1:1111/eureka/,http://svr2:1112/eureka/
-debug: true
+logging:
+  level:
+    com.netfix: debug
