@@ -16,7 +16,7 @@
     </modules>
     <packaging>pom</packaging>
 
-    <name>springcloud-learning</name>
+    <name>spring-cloud-learning</name>
     <description>Spring Cloud相关</description>
 
     <parent>
